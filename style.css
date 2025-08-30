@@ -1,31 +1,17 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-@font-face {
-    font-family: danger;
-    src: url(pdark.ttf);
-}
-@font-face {
-    font-family: pd;
-    src: url(pdark.ttf);
-}
-:root {
-    --bg: linear-gradient(to right, rgb(174, 0, 255), rgb(40, 230, 192));;
-}
-body {
-    background: var(--bg);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 100%;
-}
-.main {
-    background: url(premium_photo-1661878265739-da90bc1af051.avif);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 700px;
-}
+/* to be presented on 8/30/2025 */
+/* by Paul Goodluck */
+/* to Zeustek */
+
+/* General */
+* {margin: 0; padding: 0; box-sizing: border-box;}
+@font-face {font-family: danger; src: url(pdark.ttf);}
+@font-face {font-family: pd; src: url(pdark.ttf);}
+
+/* ROOT/THEME */
+:root {--bg: linear-gradient(to right, rgb(241, 235, 235), rgb(217, 212, 212))10%;; --color-theme: linear-gradient(to bottom, rgb(255, 255, 255)90%, rgb(209, 209, 209));; --text: linear-gradient(to right, rgb(0, 132, 255), rgb(92, 92, 92));;}
+body {background: var(--bg); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; width: 100%;}
+
+/* navbar */
 .logo{
     text-transform: uppercase;
 }
@@ -39,22 +25,32 @@ body {
     padding: 25px 0;
     background: linear-gradient(to right, rgb(0, 238, 255), rgb(240, 208, 208));;
 }
-ul{
+#navUl {
     display: flex;
 }
-ul li {
+#navUl li {
     list-style: none;
     margin: 0 10px;
 }
-ul li a{
+#navUl li a{
     text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 18px;
     font-weight: 600;
     transition: 0.3s ease all;
+    color: rgb(25, 8, 208);
 }
-ul li a:hover{
+#navUl li a:hover{
     color: rgb(5, 244, 244);
+}
+
+/* greeting */
+.main {
+    background: url(premium_photo-1661878265739-da90bc1af051.avif);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 700px;
 }
 .hero-content{
     position: absolute;
@@ -63,6 +59,10 @@ ul li a:hover{
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
+}
+.hero-content h1  {
+    color: var(--text);
+    -webkit-background-clip:text;background-clip:text;
 }
 .btn{
     margin-top: 50px;
@@ -84,42 +84,43 @@ ul li a:hover{
     font-weight: 500;
 }
 .bto:hover {
-    background: linear-gradient(to right, rgb(255, 0, 208), rgb(0, 213, 255));;
+    background: var(--color-theme);
     color: black;
     cursor: pointer;
 }
-.container{
+.container {
     padding: 15px 0;
     display: flex;
+    padding: 30px;
     justify-content: space-evenly;
-    background: linear-gradient(to right, rgb(231, 242, 244), rgb(0, 213, 255));;
+    background: var(--color-theme);
 }
-.container img{
+.container img {
     width: 550px;
-    height: 400px;
+    height: 350px;
 }
-.container h2{
+.container h2 {
     text-align: center;
 }
-.container p{
+.container p {
     margin: 15px auto;
 }
-.container-1{
+.container-1 {
     display: flex;
     padding: 15px 0;
     justify-content: space-evenly;
 }
-.container-1 img{
+.container-1 img {
     width: 250px;
-    height: 400px;
+    height: 350px;
 }
-.container-1 h2{
+.container-1 h2 {
     text-align: center;
 }
-.container-1 hr{
+.container-1 hr {
     text-align: center;
 }
-hr{
+hr {
     width: 100px;
     justify-self: center;
     height: 8px;
@@ -127,7 +128,7 @@ hr{
     border: 0px solid transparent;
     background: linear-gradient(to right, rgb(0, 110, 255), rgb(22, 165, 212));;
 }
-abbr{
+abbr {
     text-decoration: none;
 }
 .service-grid{
@@ -136,7 +137,7 @@ abbr{
     justify-content: space-evenly;
     padding: 15px 0;
 }
-.service-card{
+.service-card {
     width: 400px;
     height: 390px;
     background-color: #fff;
@@ -145,57 +146,77 @@ abbr{
     transition: 1s ease all;
     margin: 10px auto;
 }
-.service-card:hover{
+.service-card:hover {
     transform: scale(1.1);
     box-shadow: 10px 10px 20px rgb(85, 85, 86);
 }
-.services h2{
+.services h2 {
     text-align: center;
 }
-.services{
-    background: linear-gradient(to right, rgb(76, 0, 255), rgb(115, 0, 255));;
+.services {
+    background: var(--color-theme);
 } 
-.service-card img{
+.service-card img {
     width: 100%;
     height: 300px;
     object-fit: cover;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-.container-2{
+#contact {
+    background: var(--color-theme);
+}
+.container-2 {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
 }
-.flex-img{
+.gallery {
+    background: var(--color-theme);
+}
+.flex-img {
     width: 400px;
     height: 200px;
     margin: 5px 10px;
     border-radius: 15px;
     border: 2px solid rgb(0, 110, 255);
 }
-.container-3{
+#aboutList {
+    display: block;
+} 
+#aboutList li{
+    list-style-type: disc;
+    list-style-position: inside;
+}
+#contact {
+    display: flex;
+    justify-content: space-evenly;
+}
+.container-3 {
     text-align: center;
     padding: 20px 0;
 }
-.container-3 p{
+.container-3 p {
     color: rgba(3, 240, 236, 0.5);
     font-family: 'pd';
 }
 footer{
     margin: 15px auto;
 }
-footer .footer-hr{
+footer .footer-hr {
     width: 100%;
     border-radius: 0px;
 }
-.menu-btn{
+.menu-btn {
     border: 1px solid transparent;
     background: transparent;
     font-size: 10px;
     color: aqua;
     display: none;
 }
+
+/* for smaller screens */
+/* 1150px */
 @media only screen and (max-width:1150px){
     .container{
         display: block;
@@ -208,12 +229,13 @@ footer .footer-hr{
         display: block;
     }
 }
+/* 800px */
 @media only screen and (max-width:800px){
     .menu-btn{
         display: block;
         margin-right: 20px;
     }
-    ul{
+    #navUl{
         display: none;
         position: absolute;
         top: 65.9px;
@@ -225,8 +247,14 @@ footer .footer-hr{
         box-shadow: 0 2px 8px rgba(0,0,0,0.2);
         padding: 10px;
     }
-    ul.show{
+    #navUl.show{
         display: flex;
+    }
+    #navUl li a{
+        color: #ffffff;
+    }
+    #navUl li a:hover{
+        color: #26b5ea;
     }
     .container{
         display: block;

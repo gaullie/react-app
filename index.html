@@ -8,29 +8,33 @@
     <title>CYBER-SHIELD</title>
 </head>
 <body>
+
     <!--NAVIGATION-->
     <header class="hero">
-    <div class="main">
+      <div class="main">
         <div class="navbar">
             <div class="logo"><h2>Secure-web</h2></div>
           <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Help</a></li>
+            <ul id="navUl">
+                <li><a class="nav-link" href="#">Home</a></li>
+                <li><a class="nav-link" href="#about">About Us</a></li>
+                <li><a class="nav-link" href="#contact">Contact Us</a></li>
+                <li><a class="nav-link" href="#services">Services</a></li>
+                <li><a class="nav-link" href="#">Help</a></li>
             </ul>
           </nav>
-          <button class="menu-btn" id="menuBtn"><h1 class="menu-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-</svg></h1></button>
+             <button class="menu-btn" id="menuBtn">
+             <h1 class="menu-icon"><svg xmlns="http://www.w3.org/2000/svg"
+             width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+             <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0
+             1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+             </svg></h1></button>
         </div>
 
         <!--hero section-->
     <div class="overlay">
         <div class="hero-content">
-            <h1>CYBER SHIELD SECURITY</h1>
+            <span><h1>CYBER SHIELD SECURITY</h1></span>
             <p>protecting your digital presence with advanced security solutions</p>
             <div class="btn">
              <a href="#about" class="bto">Learn More</a>
@@ -46,10 +50,24 @@
                 <img src="photo-1571624436279-b272aff752b5.avif" alt="about-img">
                 <div class="col">
                    <div>
-                       <h2>About Us</h2>
+                       <h2>About Us <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-person" viewBox="0 0 16 16">
+                        <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                        <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2v9.255S12 12 8 12s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h5.5z"/>
+                      </svg></h2>
                        <hr>
                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Assumenda rem quisquam molestiae perferendis officiis <br> atque eum accusamus vel dolores sint possimus in blanditiis,
                     <br> omnis fuga nihil soluta pariatur aspernatur laborum.</p>
+                    <ul id="aboutList">
+                        <li>
+                          Affordable Prices
+                        </li>
+                        <li>
+                          Standard quality of protection
+                        </li>
+                        <li>
+                          24/7 service
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -58,7 +76,9 @@
         <!--service-->
         <section class="services" id="services">
             <div>
-                <h2>Our Services</h2>
+                <h2>Our Services <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-minecart" viewBox="0 0 16 16">
+                        <path d="M4 15a1 1 0 1 1 0-2 1 1 0 0 1 0 2m0 1a2 2 0 1 0 0-4 2 2 0 0 0 0 4m8-1a1 1 0 1 1 0-2 1 1 0 0 1 0 2m0 1a2 2 0 1 0 0-4 2 2 0 0 0 0 4M.115 3.18A.5.5 0 0 1 .5 3h15a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 14 12H2a.5.5 0 0 1-.491-.408l-1.5-8a.5.5 0 0 1 .106-.411zm.987.82 1.313 7h11.17l1.313-7z"/>
+                      </svg></h2>
                 <hr>
                 </div>
             <div class="service-grid">
@@ -81,6 +101,29 @@
         </section>
         <!--end service-->
 
+        <!--====contact us=====-->
+        <section id="contact">
+            <div class="c-profile">
+                <img src="photo-1587560699334-bea93391dcef.avif">
+            </div>
+            <div class="contact-info">
+                <h1>Contact Us</h1>
+                <h3>Give Us A Dial @+123456789</h3>
+                
+            </div>
+        </section>
+        <!--end contact-->
+
+        <!-- help
+        <section id="help">
+            <div class="help-profile">
+                <img src="help.avif">
+            </div>
+            <div class="help-contents">
+
+            </div>
+        </section> -->
+
         <!--gallery-->
         <section class="gallery" id="gallery">
             <div class="container-2">
@@ -100,7 +143,7 @@
         <footer>
             <hr class="footer-hr">
             <div class="container-3">
-                <p>&copy; 2025 CYBER-SHIELD. All rights reserved.</p>
+                <p>&copy; <span id="year"></span> CYBER-SHIELD. All rights reserved.</p>
             </div>
         </footer>
 </body>
